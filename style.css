@@ -1,5 +1,8 @@
 
 /*Common..................*/
+html{
+    margin: 0;
+}
 body{
     margin:0;
     font-family:Arial,sans-serif;
@@ -12,7 +15,7 @@ body{
 }
 .main img.background{
     width:100%;
-    height:100vh;
+    position: relative;
     
 }
 
@@ -30,6 +33,8 @@ body{
 }
  .main .header ul{
     display:flex;
+    margin:0;
+    padding:0;
 
  }
  .main .header li{
@@ -40,13 +45,15 @@ body{
      color:white;
      font-style:italic;
      padding-left:1vw;
+     font-size:1.7vw;
+     text-decoration: none;
  }
  .para1{
     position:absolute;
 
     text-align:center;
     font-size: 7vw;
-    top:12vw;
+    top:3.5vw;
     left:30vw;
     color: rgb(57, 47, 47);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -54,75 +61,109 @@ body{
     
 
  }
- .para2{
-    position:absolute;
-    text-align: center;
-    font-size: 7.5vw;
-    top:17.5vw;
-    left:30vw;
-    color: rgb(41, 41, 64);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
- }
  .main .mount-left{
     position:absolute;
-    bottom:80px;
+    top: 52%;
     left:0%;
     width:53%;
     height:47%;
     z-index:1;
  }
- .main .mount-right{
-    position:absolute;
-    bottom:80px;
-    right:0vw;
-    width:53%;
-    height:53%;
-    z-index:1;
- }
+ .main .mount-right {
+    position: absolute;
+    width: 52%;
+    top: 46%;
+    height: 53%;
+    left: 48%;
+    z-index: 1;
+}
  .main .losa img{
     position:absolute;
     bottom:1vw;
     left:25%;
     width:7%;
    }
+
+
+
+/*----------------HISTORY --------------*/
+
+
 .history{
     position:relative;
+    margin:0;
     
 }
 
 .history .list1 {
-    position:relative;
+    position:absolute;
     top:6vw;
     display:flex;
     color:black;
+
     justify-content:space-between;
 }
 .history img.background2{
-    position: relative;
+    
     width:100%;
-    top:-40px;
+
 }
+
+.history .header {
+    position:relative;
+    top:1vw;
+    left:20%;
+    width:60%;
+    margin-top:0vw;
+    margin-bottom:1vw;
+    display:flex; 
+    justify-content:space-between;
+ }
+ .history .header img{
+     width:3vw;
+     height:3vw;
+     margin-bottom:1vw;
+ }
+
+.history .header ul{
+    display:flex;
+    margin:0;
+    padding:0;
+   
+ }
+
+ .history .header li{
+    list-style:none;
+    padding:1vw 1vw 0.8vw 1vw;
+   
+ }
+ .history .header li a {
+     color:rgb(0, 0, 0);
+     font-style:italic;
+     padding-left:1vw;
+     font-size:1.7vw;
+     text-decoration: none;
+ }
 .history .txt .para{
     display: flex;
     flex-direction: row;
     position:absolute;
-    font-size:18px;
-    top:300px;
-    left:600px;
+    font-size:1vw;
+    top:15vw;
+    left:28vw;
     font-family:'Courier New', Courier, monospace;
 }
 .history .txt h1{
     position:absolute;
-    font-size:6vw;
-    top:30px;
-    left:470px;
+    font-size:7vw;
+    top:2vw;
+    left:20vw;
     color:rgb(178, 168, 168);
 }
 .history .txt h2{
     position:absolute;
-    top: 140px;
-    left:600px;
+    top: 9vw;
+    left:28vw;
     font-size:2vw;
     color:rgb(82, 104, 146);
 }
@@ -130,8 +171,8 @@ body{
     position:absolute;
     width:100%;
     height:20%;
-    top:76.5%;
-    bottom:0%;
+
+    bottom:0.5%;
 }
 .trek img{
     width: 15vw;
@@ -142,12 +183,12 @@ body{
     padding-left: 3vw;
     padding-right: 3vw;
     gap: 0.5vw;
-    top: 45.5vw;
+    bottom: 2vw;
     left: 14vw;
 }
 
 .list {
-    margin-top: 12px;
+    margin-top: vw;
     position: absolute;
 }
 .climb 
@@ -162,102 +203,107 @@ body{
     top: 20vw;
     left: 20vw;
 }
+
+
+
+/*---------CLIMB-----------*/
+
+
+
+
 .climb{
     position:relative;
     
 }
+ .climb .txt{
+    display: flex;
+    margin-left: 20%;
+    padding: 1.5vw 0vw;
+ }
+.climb .txt .para{
+    font-size:1vw;
+    font-family:'Courier New', Courier, monospace;
+    width: 50%;
+    margin-left: 5%;
+}
+.climb .txt h1{
+    font-size:7vw;
+    margin: 0;
+    color:rgb(178, 168, 168);
+}
+.climb .txt h2{
+    margin-top: 3vw;
+    margin-left:-1.8vw;
+    font-size:2vw;
+    color:rgb(82, 104, 146);
+}
 
-.back1{
+.climb .bar{
+    background-color:rgb(91, 91, 198);
+    width: 100%;
+    margin-top: -0.3vw;
+}
+.climb .bar3{
+    display:flex;
+    width:25%;
+    margin-left: 20%;
+    justify-content: space-between;
+}
 
-    background-color: white;
-    height:160px;
+.climb .bar .bar3 .bar2 p{
+    margin: 0vw;
+    padding: 1.2vw;
+    font-size: 1.2vw;
+}
 
-
-
+.climb .bar .bar3 .bar4 p{
+    margin: 0vw;
+    padding: 1.2vw;
+    font-size: 1.2vw;
 
 }
-.climb .back1 #rect3{
-    position: relative;
-     left:0px;
-     top:50px;
-     width: 100%;
-     height:25%;
+
+.climb .climbback img{
+    width:100%;
 
 }
-.climb .back1 #climimg{
-    position: relative;
-      
-    top:40px;
-
-}
-.climb .back1 #loremimg{
-    position: relative;
-    width: 40%;
-    left: 45%; 
-    top:-8vh; 
-    
-
-}
-.climb #box1{
+.climb .box1{
     position:absolute; 
-    top:380px; 
-    left: 600px;
-    width:15%;
+   bottom: 17vw;
+    left: 19vw;
+    width:20%;
 }
 
-.climb #date1{
-    position:absolute;
-    top:450px;
-    left:660px;
+.climb .date1{
+    position:absolute; 
+    bottom: 27vw;
+     left: 22vw;
     width:9%
 }
-.climb #date2{
+.climb .date2{
     position:absolute; 
-    top:490px; 
-    left: 625px;
+   bottom: 25vw;
+    left: 22vw;
     width:14%;
 }
-.climb #date3{
+.climb .date3{
     position:absolute; 
-    top:520px; 
-    left: 625px;
+    bottom: 23vw;
+     left: 22vw;
     width:14%;
 }
-.climb #date4{
+.climb .date4{
     position:absolute; 
-    top:550px; 
-    left: 625px;
+   bottom: 21vw;
+    left: 22vw;
     width:14%;
 }
-.climb #date5{
+.climb .date5{
     position:absolute; 
-    top:580px; 
-    left: 625px;
+    bottom: 19vw;
+     left: 22vw;
     width:14%;
 }
-.climb .back1 img{
-    position:absolute;
-    top:0px; 
-    left:600px;
-    width:250px;
-}
-.climb #mount1{
-    position: absolute;
-    padding: 11px 8px 4px 8px;
-    top:145px;
-    left:600px;
-    background-color: lightgrey; 
-    width: 6%;
-    height: 3%;
-    border: 0.5% solid black;
-    
-    margin: 15px;
-}
-.climb #mount2{
-    position: absolute;
-    top:155px;
-    left:785px;
-    color:rgb(182, 177, 177);
-}
+
 
 
